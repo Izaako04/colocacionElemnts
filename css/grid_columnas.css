@@ -8,4 +8,44 @@ main section:nth-child(2n+1) {
 
 /* Grid COLUMNAS */
 
+main{
+  display: grid;
+  display:grid;
+  row-gap: 0.5rem;
+  column-gap: 0.5rem;
+  grid-template-columns: 6;
+}
 
+#datosgenerales{
+  grid-column: 1 / 6;
+  grid-row: 1;
+}
+#habilidadespersonales{
+  grid-column: 1 / 3;
+  grid-row: 2;
+}
+#conocimientos{
+  grid-column: 3 / 6;
+  grid-row: 2;
+}
+#trabajosanteriores{
+  grid-column: 0 / 2;
+  grid-row: 3;
+}
+#habilidadesprogramacion{
+  grid-column: 2 / 4;
+  grid-row: 3;
+  
+}
+#proyectosanteriores{
+  grid-column: 4 / 6;
+  grid-row: 3;
+}
+#idiomas{
+  grid-column: 1 / 3;
+  grid-row: 4;
+}
+#medioscontacto{
+  grid-column: 3 / 6;
+  grid-row: 4;
+}

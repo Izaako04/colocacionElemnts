@@ -11,32 +11,36 @@ main{
   display:grid;
   row-gap: 0.5rem;
   column-gap: 0.5rem;
-  grid-template-areas:8;
+  grid-template-areas: 
+  'datos datos datos datos datos datos'
+  'habil habil habil cono cono cono'
+  'traj traj prog prog proyec proyec'
+  'idioma idioma idioma medios medios medios';
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 
 #datosgenerales{
-  grid-area: auto / 1 / 2 / 4;
+  grid-area: datos;
 }
 #habilidadespersonales{
-  grid-area: 2/ 1/ 2 / 3;
+  grid-area: habil;
 }
 #conocimientos{
-  grid-area: 2/ 3/ 2 / 3;
+  grid-area: cono;
 }
 #trabajosanteriores{
-  flex-basis: 32.9%;
-  
+  grid-area: traj;
 }
 #habilidadesprogramacion{
-  flex-basis: 32.9%;
+  grid-area: prog;
   
 }
 #proyectosanteriores{
-  flex-basis: 32.5%;
+  grid-area: proyec;
 }
 #idiomas{
-  flex-basis: 49%;
+  grid-area: idioma;
 }
 #medioscontacto{
-  flex-basis: 49.9%;
+  grid-area: medios;
 }
